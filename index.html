@@ -37,7 +37,7 @@
     
     .menu-btn { display: none; background: none; border: none; color: var(--text-main); cursor: pointer; }
 
-    .hero { min-height: 100vh; display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; padding: 6rem 10% 2rem; gap: 2rem; }
+    .hero { min-height: 100vh; display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; padding: 8rem 10% 2rem; gap: 2rem; }
     .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 1rem; }
     .hero-title em { font-style: italic; color: var(--rose); }
     .hero-subtitle { color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem; }
@@ -86,7 +86,7 @@
       .hero-photo-wrap { order: -1; }
     }
   </style>
-<link rel="stylesheet" href="style.css"></head>
+</head>
 <body>
 
 <nav class="navbar" id="navbar">
@@ -108,7 +108,8 @@
     <h1 class="hero-title">Hi, I'm <em>Rosemary</em></h1>
     <p class="hero-subtitle">ICT Student · Class Representative · Ambassador at Xolace Inc · Aspiring Web Developer</p>
     <div class="hero-actions">
-      <a href="Rosemary_CV.pdf..pdf" download="Rosemary_CV_Dwamena" class="btn btn-outline">Download CV</a>
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="./Rosemary_CV.pdf..pdf" download="Rosemary_CV" class="btn btn-outline">Download CV</a>
     </div>
   </div>
 
@@ -136,7 +137,7 @@
 <section id="experience">
   <div class="container">
     <span class="section-eyebrow">Work History</span>
-    <h2 class="section-title">Leadership &amp; Experience</h2>
+    <h2 class="section-title">Leadership & Experience</h2>
     <div class="exp-list">
       <div class="exp-item">
         <div class="exp-header">
@@ -178,8 +179,8 @@
       <div class="project-card">
         <h3 class="project-name">01. Class Attendance System</h3>
         <p class="project-desc">A web-based system to record, track, and download student attendance data.</p>
-        <a href="https://ictbtechattendance.netlify.app/?register" target="_blank" class="status-link">
-          <span class="status-badge">Live on Netlify</span>
+        <a href="https://ictbtechattendance.netlify.app/?register" target="_blank" style="text-decoration:none;">
+          <span class="badge badge-live">Live on Netlify</span>
         </a>
       </div>
       <div class="project-card">
@@ -251,4 +252,5 @@
   });
 </script>
 
-<script src="script.js"></script></body></html>
+</body>
+</html>
