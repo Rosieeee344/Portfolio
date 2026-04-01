@@ -44,17 +44,19 @@
     .btn-primary { background: var(--rose); color: #fff; margin-right: 1rem; }
     .btn-outline { border: 1px solid var(--border); color: var(--text-main); }
 
-    .photo-frame { 
+ 
+.photo-frame { 
     position: relative; 
     width: 100%; 
     max-width: 320px; 
     aspect-ratio: 4/5; 
     background: var(--rose-light); 
-    margin: 0 auto;
-    overflow: visible; 
+    margin: 25px auto; 
+    overflow: visible !important; 
 }
 
-.photo-frame::before, .photo-frame::after { 
+.photo-frame::before, 
+.photo-frame::after { 
     content: ''; 
     position: absolute; 
     width: 40px; 
@@ -64,17 +66,17 @@
 }
 
 .photo-frame::before { 
-    top: -10px; 
-    left: -10px; 
-    border-top: 2px solid var(--rose); 
-    border-left: 2px solid var(--rose); 
+    top: -15px; 
+    left: -15px; 
+    border-top: 3px solid var(--rose); 
+    border-left: 3px solid var(--rose); 
 }
 
 .photo-frame::after { 
-    bottom: -10px; 
-    right: -10px; 
-    border-bottom: 2px solid var(--rose); 
-    border-right: 2px solid var(--rose); 
+    bottom: -15px; 
+    right: -15px; 
+    border-bottom: 3px solid var(--rose); 
+    border-right: 3px solid var(--rose); 
 }
 
 .photo-img { 
@@ -85,6 +87,7 @@
     position: relative; 
     z-index: 1; 
 }
+
 
 
     section { padding: 5rem 10%; border-top: 1px solid var(--border); }
