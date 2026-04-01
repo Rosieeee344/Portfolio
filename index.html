@@ -51,7 +51,7 @@
     aspect-ratio: 4/5; 
     background: var(--rose-light); 
     margin: 0 auto;
-    overflow: visible; /* CRITICAL: This ensures the -10px lines aren't cut off */
+    overflow: visible; 
 }
 
 .photo-frame::before, .photo-frame::after { 
@@ -59,8 +59,8 @@
     position: absolute; 
     width: 40px; 
     height: 40px; 
-    z-index: 10; /* Set this higher than the image */
-    pointer-events: none; /* This makes sure you can still click the photo through the lines */
+    z-index: 10; 
+    pointer-events: none;
 }
 
 .photo-frame::before { 
@@ -219,7 +219,10 @@
       <div class="project-card">
         <h3 class="project-name">01. Class Attendance System</h3>
         <p class="project-desc">A web-based system to record, track, and download student attendance data.</p>
-        <span class="badge badge-live">Live on Netlify</span>
+        <a href="https://ictbtechattendance.netlify.app/?register" target="_blank" class="status-link">
+    <span class="status-badge">Live on Netlify 🔗</span>
+</a>
+
       </div>
       <div class="project-card">
         <h3 class="project-name">02. Portfolio Website</h3>
